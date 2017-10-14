@@ -1,0 +1,54 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Pomodoro Timer</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+		<div class="container">
+      <h1 id="title"><b>Pomodoro Clock</b></h1>
+			<div class="row">
+				<div  class="col-md-4">
+					<div id="box_text">
+						<button id="intMinus" class="box"><strong>-</strong></button>
+            <h2 class="box"><b>Intermission</b></h2>
+						<button id="intPlus" class="box"><strong>+</strong></button>
+					</div>
+					<p id="breakTime">5</p>
+					<p class="units">minutes</p>
+				</div>
+				<div class="col-md-4">
+					<div id="tomato">
+						<p id="clock">Time<br>
+							is an<br>
+							Illusion
+						</p>
+						
+					</div>
+					<div id="manipulato">
+						<button id="start">Start</button>
+						<button id="stop">Stop</button>
+						<button id="reset">Reset</button>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div id="box_text">
+						<button id="workMinus" class="box"><strong>-</strong></button>
+            <h2 class="box"><b>Work Cycle</b></h2>
+						<button id="workPlus" class="box"><strong>+</strong></button>
+					</div>
+					<p id="workTime">25</p>
+					<p class="units">minutes</p>
+				</div>
+			</div>
+		</div>
+	<audio id="alarm" src="https://clyp.it/wid2xmve.mp3"></audio>
+</body>
+
+<footer>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="Pomodoro.js"></script>
+</footer>
