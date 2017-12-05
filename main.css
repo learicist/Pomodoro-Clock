@@ -1,0 +1,128 @@
+* {
+	margin:0;
+	padding:0;
+	
+}
+
+*:focus {
+	outline:none;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-image:url("http://ichef.bbci.co.uk/wwfeatures/wm/live/1280_640/images/live/p0/4w/46/p04w46sp.jpg");
+	background-size:cover;
+	cursor:pointer;
+	cursor:auto;
+	font-size:150%;
+}
+
+button {
+	min-width:18%;
+	background-color:#ff6347;
+	color:#fbea74;
+	border-top-right-radius:15px;
+	border-bottom-left-radius:15px;
+	border-top-left-radius:35px;
+	border-bottom-right-radius:35px;
+	padding:0px 20px;
+	font-size:2em;
+}
+
+
+#title {
+	text-align:center;
+	margin-top:45px;
+	margin-left:0;
+	margin-right:0;
+	background-color:#fbea74;
+	font-size:3em;
+	border-radius:25px;
+	box-shadow:0px 2px 2px;
+	opacity:0.933;
+	color:#4da83b;
+}
+
+.col-md-4 {
+	box-shadow:0px 5px 2px;
+	border-radius:45px;
+	margin: 60px auto;
+	background-color:#fbea74;
+	opacity:0.9;
+}
+
+.box {
+	display:inline-block;	
+	margin:2px;
+    color:#4da83b;
+}
+
+#box_text {
+	text-align:center;
+	margin: 5% 8%;
+  
+}
+
+#breakTime {
+	text-align:center;
+	box-shadow:0px 0px 5px;
+	border-radius:25%;
+	font-size:3em;
+	background-color:#ff6347;
+  color:#fbea74;
+}
+
+.units {
+	margin:5% 25%;
+	text-align:center;
+	box-shadow:0px 0px 5px;
+	font-size:1.8em;
+	background-color:#ff6347;
+	border-radius:25px;
+	color:#fbea74;
+}
+
+#tomato {
+	border:1px dashed blue;
+	border-radius: 50%;
+	text-align:center;
+	margin:10px auto 0px auto;
+	background-color:#ff6347;
+	font-size:1.6em;
+	color:#fbea74;
+}
+
+#clock {
+	font-size:3em;
+}
+
+#manipulato {
+	margin:5% 2% 1.5% 2%;
+	text-align:center;
+}
+
+#workTime {
+	text-align:center;
+	border-radius:25%;
+	box-shadow:0px 0px 5px;
+	font-size:3em;
+	margin:5% auto;
+	background-color:#ff6347;
+  color:#fbea74;
+}
+
+#intMinus {
+  color:#fbea74;
+}
+
+#intPlus {
+  color:#fbea74;
+}
+
+#workPlus{
+  color:#fbea74;
+}
+
+#workMinus{
+  color:#fbea74;
+}
