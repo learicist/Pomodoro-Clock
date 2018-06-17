@@ -1,59 +1,161 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Pomodoro Timer</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="main.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-	</head>
-	
+	<header>
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<!--Fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+		<!--<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">-->
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:500" rel="stylesheet">
+		<!--Meta-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<!--Bootstrap & jQuery-->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous">
+		</script>
+		<link 
+			rel="stylesheet" 
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+			crossorigin="anonymous">
+		<script 
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+			crossorigin="anonymous">
+		</script>
+	</header>
+
 	<body>
-		<div class="container">
-			<h1 id="title"><b>Pomodoro Clock</b></h1>
-			<div class="row">
-				<div class="col-md-4">
-					<div id="box_text">
-						<button id="intMinus" class="box"><strong>-</strong></button>
-						<h2 class="box"><b>Intermission</b></h2>
-						<button id="intPlus" class="box"><strong>+</strong></button>
-					</div>
-					<p id="breakTime">5</p>
-					<p class="units">minutes</p>
-				</div>
-				<div class="col-md-4">
-					<div id="tomato">
-						<p id="clock">
-							Time<br>
-							is an<br>
-							Illusion
-						</p>
-						
-					</div>
-					<div id="manipulato">
-						<button id="start">Start</button>
-						<button id="stop">Stop</button>
-						<button id="reset">Reset</button>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div id="box_text">
-						<button id="workMinus" class="box"><strong>-</strong></button>
-						<h2 class="box"><b>Work Cycle</b></h2>
-						<button id="workPlus" class="box"><strong>+</strong></button>
-					</div>
-					<p id="workTime">25</p>
-					<p class="units">minutes</p>
-				</div>
+	  <div class="pageOne text-center">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div id="nav" class="container">
+			<div class="navbar-header">
+			  <button id="menu" class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#hamburger" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			  </button>
+			  <a class="navbar-brand" href="#top">
+				<img 
+					id="eighthnote" 
+					src="http://atlas-content-cdn.pixelsquid.com/stock-images/eighth-note-musical-5AvDPr9-600.jpg" alt="music note" 
+				/>
+			  </a>
 			</div>
+			<div id="hamburger" class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li class="dropdown"><a href="#Contact"><span>Contact</span></a></li>
+				<li class="dropdown"><a href="#Portfolio"><span>Portfolio</span></a></li>
+				<li class="dropdown"><a href="#About"><span>About</span></a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+
+
+		<div id="About" class="container-fluid block1">
+		  <div class="row">
+			<div class="col-md-8 aboutMe">
+			  <p id="about">Front End Developer working toward a Full Stack certification. Enjoying a newfound passion for Programming and Web Development, while pursuing languages such as Python, PHP and Command Line.
+			  </p>
+			  <h3>//\\//\\</h3>
+			  <h3 id="fatbottomgirls">Content Creation - Web Design - Music</h3>
+			</div>
+			<div>
+			  <img class="col-md-4 img-responsive" id="myFace" src="http://res.cloudinary.com/learicist/image/upload/v1513471759/lucious_and_i_fkvn9d.jpg" alt="myself and my cat" />
+			</div>
+		  </div>
 		</div>
-	
-	<audio id="alarm" src="https://clyp.it/wid2xmve.mp3"></audio>
-</body>
-	
-	<footer>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!--end of about me section-->
+	  </div>
+	  <!--end of Page1-->
+		<div id="Portfolio" class="container-fluid block2">
+		  <div class="row">
+			<h2 class="col-sm-12 port">Portfolio</h2>
+			<br></br>
+			<h3 style="margin-bottom:5%" class="col-sm-12 port">----//\\//\\----</h3>
+		  </div>
+		  <div class="webshots">
+			<div class="row screenshots">
+			  <a target="_blank" href="https://learicist.github.io/WikiPedia-Navigator/"><img style="margin:auto" class="col-lg-6 img-responsive" src="http://res.cloudinary.com/learicist/image/upload/v1505965863/wiki_kossek.jpg" alt="screenshot of webpage"/></a>
+			  <a target="_blank" href="https://learicist.github.io/Quote-Machine/"><img style="margin:auto" class="col-lg-6 img-responsive" src="http://res.cloudinary.com/learicist/image/upload/v1505965867/quote_jlckq7.jpg" alt="screenshot of webpage"/></a>
+			</div>
+			<div class="row screenshots">
+			  <a target="_blank" href="https://learicist.github.io/Tribute-Page/"><img style="margin:auto" class="col-lg-6 img-responsive" src="http://res.cloudinary.com/learicist/image/upload/v1505965869/thales_ihmltz.jpg" alt="screenshot of webpage"/></a>
+			  <a target="_blank" href="https://learicist.github.io/Twitch-API/"><img style="margin:auto" class="col-lg-6 img-responsive" src="http://res.cloudinary.com/learicist/image/upload/v1505965864/twitch_crhggj.jpg" alt="screenshot of webpage"/></a>
+			</div>
+			<div class="row screenshots">
+			  <a target="_blank" href="https://learicist.github.io/Weather-API/"><img style="margin:auto" class="col-md-6 img-responsive" src="http://res.cloudinary.com/learicist/image/upload/v1505965865/weather_zafloy.jpg" alt="screenshot of webpage"/></a>
+			  <a target="_blank" href="https://learicist.github.io/Calculator/"><img style="margin:auto" class="col-md-6 img-responsive" src="http://res.cloudinary.com/learicist/image/upload/v1505965865/calc_ojr9pn.jpg" alt="screenshot of webpage"/></a>
+			</div>
+		  </div>
+		</div>
+	  
+	  <!--end of page 2-->
+		<div id="Contact" class="container-fluid block3">
+		  <div class="row">
+			<h2 class="col-sm-12 title">Contact Me</h2>
+		  </div>
+		  <div class="row">
+			<h3 class="col-sm-12">~~//\\//\\~~</h3>
+		  </div>
+		  <div style="margin-bottom:10px" class="row">
+			<ul id="inputs" class="col-md-6">
+			  <form action="mailto:learicist@gmail.com" method="post" enctype="text/plain">
+				<li>
+				  <input class="textbox" type="text" placeholder="Name" required/>
+				</li>
+				<li>
+				  <input class="textbox" type="text" placeholder="Email Address" required/>
+				</li>
+				<li>
+				  <input class="textbox" type="text" placeholder="Phone Number" required/>
+				</li>
+				<li>
+				  <textarea class="textbox" id="messagebox" type="text" placeholder="Message" required></textarea>
+				</li>
+				<button id="send" type="submit">Send</button>
+			  </form>
+			</ul>
+			<h4 style="margin-top:4%; font-size:2em" class="col-md-6">You rang? Please feel free to reach out to me; for information regarding Programming, my projects and experience, or even Music. I would be happy to hear from you and address any questions or curiosities you may have. L<span style="color:orange">e</span>t'<span style="color:orange">s</span> g<span style="color:orange">o</span> M<span style="color:orange">e</span>t<span style="color:orange">s</span>!</h4>
+		  </div>
+		</div>  
+
+		<div class="container-fluid block4">
+		  <div class="container-fluid block4-text">
+			<div class="row">
+			  <div class="col-sm-6" id="blBlock">
+				<h4 style="margin-top:1.2em" class="text-center bottomLeft">ABOUT THIS PAGE</h4>
+				<p class="text-center bottomLeft" style="font-size:1.25em">Made while listening exclusively to RTJ Albums 1-3                     <br></br>
+				by<a id="myName" class="btn btn-default" target="_blank" href="https://twitter.com/learicist">Michael Leary</a>
+				</p>
+			  </div>
+
+			  <div class="col-sm-6 text-center" id="brBlock">
+				<h4># FIND ME #</h4>
+				<div>
+				  <a class="btn btn-default me" target="_blank" href="https://github.com/learicist">GitHub</a>
+				  <a class="btn btn-default me" target="_blank" href="https://www.linkedin.com/in/mike-leary-1b441b8a/">LinkedIn</a>
+				  <a class="btn btn-default me" target="_blank" href="https://codepen.io/learicist/">CodePen</a>
+				  <a class="btn btn-default me" target="_blank" href="https://soundcloud.com/learicist">SoundCloud</a>
+			   </div>
+			 </div>
+			</div>
+		  </div>
+		</div>
+		<a href="javascript:" id="scrollUp"><i class="icon-chevron-up"></i></a>
 		<script src="main.js"></script>
+	</body>
+
+	<footer>
+	  <div class="container-fluid foot">
+		<div>
+		  <h5 id="copyright">learicist &copy;2017. All Rights Reserved</h5>
+		</div>
+	  </div>
 	</footer>
 </html>
